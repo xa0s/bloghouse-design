@@ -1,0 +1,12 @@
+<% render 'default' do %>
+	<h1><%= @item[:title] %></h1>
+	<ol>
+		<% @item[:entries].each do |entry| %>
+			<li><%= link_to entry[:title], entry.path %></li>
+		<% end %>
+	</ol>
+	<h3><%= tr('catalog.header.other') %></h3>
+	<% @item.catalogs.each do |cat| %>
+		<%= link_to_unless_current cat[:pager], cat %>
+	<% end %>
+<% end %>

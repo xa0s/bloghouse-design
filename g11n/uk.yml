@@ -1,0 +1,25 @@
+uk:
+  catalog:
+    title:
+      all:
+        latest: "Останні дописи"
+        paged: "Усі дописи за %{year}"
+      tagged:
+        latest: "Останні дописи з тегом %{tag}"
+        paged: "Дописи з тегом %{tag} за %{year}"
+    header:
+      other: "Інші дописи"
+      tags:
+        all: "Хмарка тегів"
+    pager:
+      latest: "0станні"
+  lang:
+    short:
+      en: 'анг'
+      uk: 'укр'
+    long:
+      en: 'англійськa'
+      uk: 'українськa'
+  time:
+    formats:
+      blog: ! '%d %B %Y'

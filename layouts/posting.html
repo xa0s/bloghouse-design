@@ -1,0 +1,18 @@
+<% render 'default' do %>
+	<h6><%= lc item.time(:created_at), :format => :blog %></h6>
+	<h1><%= item[:title] %></h1>
+
+	<% if tags_for(item).any? %>
+		<% my_lang = item.i18n[:lang] %>
+		<p>
+			<% tags_for(item).each do |tag| %>
+				<%= link_to tr(tag, :scope => :tag), @items["/blog/tag-latest-list/#{tag}/#{my_lang}/"], :tag => tag %>
+			<% end %> 
+		</p>
+
+	<% end %>
+
+	<article>
+		<%= yield %>
+	</article>
+<% end %>

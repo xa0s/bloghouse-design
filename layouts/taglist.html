@@ -1,0 +1,8 @@
+<% render 'default' do %>
+	<h1><%= @item[:title] %></h1>
+	<ol>
+		<% @item[:entries].each do |entry| %>
+			<li><%= link_to tr(entry[:tag], :scope => :tag), entry.path %></li>
+		<% end %>
+	</ol>
+<% end %>
