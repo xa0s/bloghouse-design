@@ -12,7 +12,7 @@ en:
       tags:
         all: "Tag Cloud"
     pager:
-      latest: "latest"
+      latest: "%{count} latest"
   lang:
     short:
       en: 'eng'

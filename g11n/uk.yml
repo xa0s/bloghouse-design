@@ -12,7 +12,7 @@ uk:
       tags:
         all: "Хмарка тегів"
     pager:
-      latest: "0станні"
+      latest: "%{count} останніx"
   lang:
     short:
       en: 'анг'
